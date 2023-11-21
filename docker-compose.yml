@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  vueapp:
+    build: .
+    volumes:
+      - /home/shadow/Documents/code/python/chatServer/volumes/vueapp:/home/node/vueapp
+    ports:
+      - "8080:8080"
+    command: npm run serve
+
